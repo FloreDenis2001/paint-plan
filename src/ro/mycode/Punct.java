@@ -1,0 +1,43 @@
+package ro.mycode;
+
+public class Punct {
+    private int x;
+    private int y;
+
+    public Punct(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        String text = "x = " + this.x + "\n";
+        text += "y= " + this.y;
+        return text;
+    }
+
+    public void translate(int dim){
+
+        this.x=this.x+dim;
+        this.y=this.y+dim;
+    }
+
+
+
+}
